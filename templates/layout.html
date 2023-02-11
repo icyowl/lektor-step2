@@ -1,0 +1,15 @@
+<!doctype html>
+{% include "includes/head.html" %}
+<title>{% block title %}Welcome{% endblock %} — lektor-demo</title>
+<body>
+  <header>
+    {% include "includes/header.html" %}
+  </header>
+  <div class="page">
+    {% include "includes/breadcrumbs.html" %}
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    {% include "includes/footer.html" %}
+  </footer>
+</body>

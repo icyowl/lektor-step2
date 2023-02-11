@@ -1,0 +1,43 @@
+title: Html要素のテスト
+---
+author: Aki
+---
+body:
+
+シンプレクティック形式 ω の基本的性質を使い、整合性を持つ概複素構造 J はリーマン計量 ω(u, Jv) に対しての概ケーラー構造(almost Kähler structure)である。
+
+### リスト
+#### 番号つきのリスト
+1. 番号つきのリストです
+2. 番号つきのリストです
+
+#### 番号なしのリスト
+- 番号なしのリストです
+- 番号なしのリストです
+
+#### ネストされたリスト
+1. 番号付きのリストです
+  - 番号なしのリストです
+  - 番号なしのリストです
+    - 番号なしのリストです
+
+### 引用
+>M はシンプレクティック形式 ω を持ち、概複素構造 J を持っているとする。[wikipedia](https://ja.wikipedia.org/wiki/%E6%A6%82%E8%A4%87%E7%B4%A0%E6%A7%8B%E9%80%A0)
+
+### コード
+<pre><code>import numpy as np
+
+# ビットジェネレータはPCG64
+rng = np.random.default_rng() 
+samples = rng.normal(size=2500)
+</code></pre>
+
+ランダムな整数は<code>integers(low[, high, size])</code>で取得します。
+
+### 表
+|見出し|見出し|heading|heading|heading|
+|---|---|---|---|---|
+|要素|要素|element|element|element|
+|要素|要素|element|element|element|
+---
+pub_date: 2023-01-17

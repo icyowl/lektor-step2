@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <div class="tag-page">
+    <h2>{{ this.title }}</h2>
+    <ul>
+      {% if tagweights() %}
+        {% for tag, weight in (tagweights() | dictsort(by='value', reverse=true)) %}
+          <li><a href="{{ ('/blog@tag/' ~ tag ) | url }}">{{ tag }}  ({{ weight.count }})</a></li>
+        {% endfor %}
+      {% else %}
+        <li>No tags.</li>
+      {% endif %}
+    </ul>
+  </div>
+{% endblock %}

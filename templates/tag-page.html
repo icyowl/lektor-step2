@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="tag-page">
+  <h2>Tag: {{ this.tag }}</h2>
+  <ul>
+    {% for i in this.items %}
+      <li>
+        <span>{{ i.pub_date.strftime('%Y-%m-%d') }}</span>
+        <a href="{{ i|url }}">{{ i.title }}</a>
+      </li>
+    {% else %}
+      <li><em>No items.</em></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

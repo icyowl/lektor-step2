@@ -1,0 +1,120 @@
+:root {
+  /* --gray-1:  #f9faf9;
+  --gray-2:  #dadedc;
+  --gray-3:  #bcc2bf;
+  --gray-4:  #9da6a2;
+  --gray-5:  #7e8a85;
+  --gray-6:  #626c68;
+  --gray-7:  #464d4a;
+  --gray-8:  #2a2e2d;
+  --gray-9:  #0e100f; */
+
+  --gray-1: hsl(0, 0%, 94%);
+  --gray-2: hsl(0, 0%, 83%);
+  --gray-3: hsl(0, 0%, 72%);
+  --gray-4: hsl(0, 0%, 61%);
+  --gray-5: hsl(0, 0%, 50%);
+  --gray-6: hsl(0, 0%, 39%);
+  --gray-7: hsl(0, 0%, 28%);
+  --gray-8: hsl(0, 0%, 17%);
+  --gray-9: hsl(0, 0%, 6%);
+
+  /* monochrome */
+  --primarycolor: var(--gray-3);
+  --secondarycolor: var(--gray-9);
+  --linkcolor: var(--gray-8);
+  --hovercolor: var(--gray-6);
+  --page-backgroundcolor: var(--gray-1);
+
+  /* Cadetblue */
+  /* --primarycolor:  #7fb1b2;
+  --secondarycolor:  #1b2c3f;
+  --linkcolor:  #213040;
+  --hovercolor:  #283d55;
+  --nenu-active-color:  #030b0b;
+  --page-backgroundcolor:  #fbfdfd; */
+
+  /* Bluegray*/   
+  --primarycolor:  #B0BEC5;
+  --secondarycolor:  #373d59;
+  --linkcolor:  #413f5c;
+  --hovercolor:  #504c77;
+  --nenu-active-color:  #071116;
+  --page-backgroundcolor:  #fbfcfd;
+
+}
+
+/* add colors */
+h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+  color: var(--gray-8);
+}
+
+h2 a:hover, h3:hover a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+  text-decoration: none;
+  color: var(--gray-6);
+}
+
+header .active a {
+  color: var(--nenu-active-color);
+}
+
+.disabled {
+  color: var(--gray-3);
+}
+
+/* override colors */
+a {
+  color: var(--linkcolor);
+}
+
+a:hover {
+  color: var(--hovercolor);
+}
+
+header, footer, div.page {
+  background: var(--primarycolor);
+}
+
+header h1 {
+  color: var(--secondarycolor);
+}
+
+div.page {
+  background: var(--page-backgroundcolor);
+}
+
+/* override fonts */
+body {
+  font-family: var(--font-body);
+}
+
+header h1 {
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+header nav ul {
+  font-family: var(--font-verdana);
+}
+
+/* layout adjustment */
+.meta {
+  line-height: 1;
+}
+
+/* responsive */
+header, footer, div.page {
+  width: initial;
+  max-width: 760px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 2px;
+  }
+  header, footer, div.page {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+/* hamburger menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar #burger-icon {
+  margin: 0 .5rem;  
+  border: none;
+  background: none;
+  display: none;
+  fill: var(--linkcolor);
+}
+
+@media screen and (max-width: 640px) {
+
+  .navbar #burger-icon {
+    display: initial;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar .icon-fade {
+    fill: var(--gray-5);
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+}

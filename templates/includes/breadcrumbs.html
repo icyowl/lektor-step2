@@ -1,0 +1,5 @@
+<div class="breadcrumbs">
+  {% for i in this._path | root_relative_path_list %}
+    &raquo; <a href="{{i[0]}}">{{i[1]}}</a>
+  {% endfor %}
+</div>

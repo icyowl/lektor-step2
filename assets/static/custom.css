@@ -1,0 +1,55 @@
+
+.siblings {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--spacing-2);
+}
+
+/* tags */
+.meta  {
+  display: flex;
+  justify-content: start;
+}
+
+.meta ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta ul li {
+  display: inline;
+  line-height: 1;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+
+.meta span {
+  margin-left: 2px;
+}
+
+/* tag page */
+.tag-page ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.hll pre {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: var(--font-code);  /* 日本語コメントの字幅を小さくするためsytem-uiを入れてます。*/
+  background: #f0f0f0;
+}
+
+.breadcrumbs, .breadcrumbs a {
+  color: var(--gray-6);
+}
+
+/* hr ajustment */
+div.page h2 {
+  margin-bottom: .625rem;
+}
+
+.articles hr {
+  background: var(--gray-1);
+}

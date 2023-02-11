@@ -1,0 +1,14 @@
+{% macro render_sibling_page_links(post) %}
+  <div class="siblings">
+    {% if post.has_next() %}
+        <a href="{{ post.get_siblings().next_page|url }}">Previous Post</a>
+    {% else %}
+        <span class="disabled">Previous Post</span>
+    {% endif %}
+    {% if post.has_prev() %}
+        <a href="{{ post.get_siblings().prev_page|url }}">Next Post</a>
+    {% else %}
+        <span class="disabled">Next Post</span>
+    {% endif %}
+  </div>
+{% endmacro %}

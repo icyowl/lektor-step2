@@ -1,0 +1,9 @@
+[project]
+name = 日本語のTitle
+url_style = absolute
+
+[packages]
+lektor-markdown-excerpt = 0.1
+lektor-tags = 0.5.1
+lektor-markdown-highlighter = 0.3.2
+lektor-root-relative-path = 0.2.1

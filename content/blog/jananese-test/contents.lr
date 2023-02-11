@@ -1,0 +1,16 @@
+title: 日本語表示の確認
+---
+author: Aki
+---
+body:
+
+シンプレクティック形式 ω の基本的性質を使い、整合性を持つ概複素構造 J はリーマン計量 ω(u, Jv) に対しての概ケーラー構造(almost Kähler structure)である。
+
+# h1. 見出しTitle1
+## h2. 見出しTitle2
+### h3. 見出しTitle3
+#### h4. 見出しTitle4
+##### h5. 見出しTitle5
+###### h6. 見出しTitle6
+---
+pub_date: 2023-01-17

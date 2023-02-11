@@ -1,0 +1,21 @@
+title: Hello Website
+---
+pub_date: 2023-01-16
+---
+author: Aki
+---
+body:
+
+This is an example blog post.  Not much here but that's not the point :)
+
+```python
+import numpy as np
+
+rng = np.random.default_rng() # コメントの日本語
+samples = rng.normal(size=2500)
+```
+---
+tags:
+
+coffee
+tea
